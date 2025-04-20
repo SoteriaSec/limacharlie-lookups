@@ -1,4 +1,4 @@
-name: Update RMM Domain Lookup List
+name: Update RMM Domain & IP & URL Lookup Lists
 
 on:
   schedule:
@@ -25,51 +25,68 @@ jobs:
             https://raw.githubusercontent.com/magicsword-io/LOLRMM/main/detections/sigma/rmm_domains_dns_queries.yml \
             -o rmm_domains_dns_queries.yml
 
-      - name: Extract domains & write JSON lookup
+      - name: Extract lookups & write JSON files
         run: |
           mkdir -p LOLRMM-Domains
           pip3 install pyyaml
 
           python3 <<'EOF'
-          import yaml, json
+          import yaml, json, re
 
           # Load the Sigma rule
           with open("rmm_domains_dns_queries.yml") as f:
               rule = yaml.safe_load(f)
 
-          # Raw list under detection.selection["query|contains"]
           raw = rule["detection"]["selection"]["query|contains"]
 
-          clean = set()
+          domains = {}
+          ips = {}
+          urls = {}
+
+          # IPv4 regex
+          ipv4_re = re.compile(r'^\d{1,3}(?:\.\d{1,3}){3}$')
+
           for entry in raw:
-              # strip any leading '.' or '*' characters
+              # remove any leading dots or asterisks
               trimmed = entry.lstrip(".*")
-              # if it's a URL or path, take only the domain part before the first '/'
-              domain = trimmed.split("/", 1)[0]
-              if domain:
-                  clean.add(domain.lower())
+              if not trimmed:
+                  continue
+              # classify as URL if it contains a slash
+              if "/" in trimmed:
+                  key = trimmed.lower()
+                  urls[key] = {}
+              # classify as IP
+              elif ipv4_re.match(trimmed):
+                  key = trimmed
+                  ips[key] = {}
+              # otherwise it's a domain
+              else:
+                  key = trimmed.lower()
+                  domains[key] = {}
 
-          domains = sorted(clean)
-
-          # Build lookup dict with empty metadata
-          lookup = { d: {} for d in domains }
-
-          # Write the JSON object
-          out_path = "LOLRMM-Domains/rmm-domain-lookup-list.json"
-          with open(out_path, "w") as out:
-              json.dump(lookup, out, indent=2)
+          # sort each and write out as JSON objects
+          for filename, data in [
+              ("LOLRMM-Domains/rmm-domain-lookup-list.json", domains),
+              ("LOLRMM-Domains/rmm-ip-lookup-list.json", ips),
+              ("LOLRMM-Domains/rmm-urls-lookup-list.json", urls),
+          ]:
+              ordered = {k: data[k] for k in sorted(data)}
+              with open(filename, "w") as out:
+                  json.dump(ordered, out, indent=2)
           EOF
 
-      - name: Commit & push rmm-domain-lookup-list.json
+      - name: Commit & push lookup files
         working-directory: ${{ github.workspace }}
         shell: bash
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add LOLRMM-Domains/rmm-domain-lookup-list.json
+          git add LOLRMM-Domains/rmm-domain-lookup-list.json \
+                  LOLRMM-Domains/rmm-ip-lookup-list.json \
+                  LOLRMM-Domains/rmm-urls-lookup-list.json
           if git diff --cached --quiet; then
-            echo "No changes to LOLRMM-Domains/rmm-domain-lookup-list.json"
+            echo "No changes to lookup lists"
           else
-            git commit -m "chore: update RMM domain lookup list"
+            git commit -m "chore: update RMM domain, IP, and URL lookup lists"
             git push
           fi
