@@ -17,7 +17,7 @@ All Lookups in this repository are **automatically refreshed once a week**. You 
 
 ## 🚀 Included Lookups
 
-- **LOLRMM**  
+- **LOLRMM-Domains**  
   Infrastructure‑as‑Code for the LOLRMM domain DNS lookup, sourced from [LOLRMM.io](https://lolrmm.io/).
 
 ## 🛠️ Getting Started

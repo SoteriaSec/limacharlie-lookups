@@ -6,7 +6,7 @@ hives:
     ext-lookup-manager:
         data:
             lookup_manager_rules:
-                - arl: '[github,SoteriaSec/limacharlie-lookups/LOLRMM/rmm-domain-lookup-list.json]'
+                - arl: '[github,SoteriaSec/limacharlie-lookups/LOLRMM-Domains/rmm-domain-lookup-list.json]'
                   format: json
                   name: rmm-domains
                   tags:
