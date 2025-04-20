@@ -1,0 +1,30 @@
+version: 3
+hives:
+  dr-general:
+      RMM Domain Lookup:
+          data:
+              detect:
+                event: DNS_REQUEST
+                op: lookup
+                path: event/DOMAIN_NAME
+                resource: lcr://lookup/rmm-domains
+                case sensitive: false
+              respond:
+                  - action: report
+                    name: RMM Tool Domain Queried
+                    metadata:
+                        author: Josh Lemon (SoteriaSec)
+                        description: Detects DNS queries to known Remote Monitoring and Management (RMM) tool domains that could indicate unauthorized remote access
+                        falsepositives:
+                        - Legitimate usage of approved remote management tools
+                        level: medium
+                        references:
+                        - https://github.com/magicsword-io/LOLRMM
+                        tags:
+                        - attack.command_and_control
+                        - attack.t1219
+          usr_mtd:
+              enabled: true
+              expiry: 0
+              tags: []
+              comment: ""

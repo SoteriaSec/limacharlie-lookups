@@ -1,0 +1,70 @@
+name: Update RMM Domain Lookup List
+
+on:
+  schedule:
+    # Every Sunday at 00:00 UTC
+    - cron: '0 0 * * 0'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-lookup:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          persist-credentials: true
+
+      - name: Download Sigma rule file
+        run: |
+          curl -sL \
+            https://raw.githubusercontent.com/magicsword-io/LOLRMM/main/detections/sigma/rmm_domains_dns_queries.yml \
+            -o rmm_domains_dns_queries.yml
+
+      - name: Extract domains & write JSON lookup
+        run: |
+          mkdir -p LOLRMM
+
+          # pull out the lines under 'query|contains:' until the next non-list line
+          domains=$(awk '
+            /query\|contains:/ {in=1; next}
+            in && /^[[:space:]]*-/ {
+              sub(/^[[:space:]]*-\s*/, "")
+              print
+            }
+            in && !/^[[:space:]]*-/ && !/^[[:space:]]*$/ { exit }
+          ' rmm_domains_dns_queries.yml | sort)
+
+          # build a JSON array
+          out=LOLRMM/rmm-domain-lookup-list.json
+          {
+            printf "[\n"
+            first=1
+            while IFS= read -r d; do
+              if [ $first -eq 1 ]; then
+                printf "  \"%s\"\n" "$d"
+                first=0
+              else
+                printf "  ,\"%s\"\n" "$d"
+              fi
+            done <<< "$domains"
+            printf "]\n"
+          } > "$out"
+
+      - name: Commit & push rmm-domain-lookup-list.json
+        working-directory: ${{ github.workspace }}
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add LOLRMM/rmm-domain-lookup-list.json
+          if git diff --cached --quiet; then
+            echo "No changes to LOLRMM/rmm-domain-lookup-list.json"
+          else
+            git commit -m "chore: update RMM domain lookup list"
+            git push
+          fi
