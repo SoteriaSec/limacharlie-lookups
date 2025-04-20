@@ -2,7 +2,6 @@
 public/
 .DS_Store
 resources/
-.hugo_build.lock
 
 # Thumbnails
 ._*
