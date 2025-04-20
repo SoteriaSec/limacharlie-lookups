@@ -1,5 +1,21 @@
 version: 3
+extensions:
+    - ext-lookup-manager
 hives:
+  extension_config:
+    ext-lookup-manager:
+        data:
+            lookup_manager_rules:
+                - arl: '[github,SoteriaSec/limacharlie-lookups/LOLRMM/rmm-domain-lookup-list.json]'
+                  format: json
+                  name: rmm-domains
+                  tags:
+                    - soteriasec
+        usr_mtd:
+            enabled: true
+            expiry: 0
+            tags: []
+            comment: ""
   dr-general:
       RMM Domain Lookup:
           data:
