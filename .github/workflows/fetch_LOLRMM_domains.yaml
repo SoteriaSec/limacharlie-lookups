@@ -27,7 +27,7 @@ jobs:
 
       - name: Extract domains & write JSON lookup
         run: |
-          mkdir -p LOLRMM
+          mkdir -p LOLRMM-Domains
           pip3 install pyyaml
 
           python3 <<'EOF'
@@ -45,7 +45,7 @@ jobs:
           lookup = { dom: {} for dom in domains }
 
           # Write as a JSON object
-          with open("LOLRMM/rmm-domain-lookup-list.json", "w") as out:
+          with open("LOLRMM-Domains/rmm-domain-lookup-list.json", "w") as out:
               json.dump(lookup, out, indent=2)
           EOF
 
@@ -55,9 +55,9 @@ jobs:
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add LOLRMM/rmm-domain-lookup-list.json
+          git add LOLRMM-Domains/rmm-domain-lookup-list.json
           if git diff --cached --quiet; then
-            echo "No changes to LOLRMM/rmm-domain-lookup-list.json"
+            echo "No changes to LOLRMM-Domains/rmm-domain-lookup-list.json"
           else
             git commit -m "chore: update RMM domain lookup list"
             git push
