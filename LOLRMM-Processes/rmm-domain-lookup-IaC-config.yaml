@@ -1,0 +1,51 @@
+version: 3
+extensions:
+    - ext-lookup-manager
+hives:
+  extension_config:
+    ext-lookup-manager:
+        data:
+            lookup_manager_rules:
+                - arl: '[github,SoteriaSec/limacharlie-lookups/LOLRMM-Processes/rmm-process-lookup-list.json]'
+                  format: json
+                  name: rmm-processes
+                  tags:
+                    - soteriasec
+        usr_mtd:
+            enabled: true
+            expiry: 0
+            tags: []
+            comment: ""
+  dr-general:
+      RMM Domain Lookup:
+          data:
+              detect:
+                events: 
+                  - NEW_PROCESS
+                  - EXISTING_PROCESS
+                op: and
+                rules:
+                  - op: is windows
+                  - op: lookup
+                    path: event/FILE_PATH
+                    resource: lcr://lookup/rmm-processes
+                    case sensitive: false
+              respond:
+                  - action: report
+                    name: RMM Tool Process Identified
+                    metadata:
+                        author: Josh Lemon (SoteriaSec)
+                        description: Detects processes associated with common Remote Monitoring and Management (RMM) tools that could be used for lateral movement
+                        falsepositives:
+                        - Legitimate usage of remote management tools
+                        level: medium
+                        references:
+                        - https://github.com/magicsword-io/LOLRMM
+                        tags:
+                        - attack.lateral_movement
+                        - attack.t1219
+          usr_mtd:
+              enabled: true
+              expiry: 0
+              tags: []
+              comment: ""

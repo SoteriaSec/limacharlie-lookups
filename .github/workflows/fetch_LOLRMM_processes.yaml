@@ -1,0 +1,64 @@
+name: Update RMM Process Lookup List
+
+on:
+  schedule:
+    # Every Sunday at 00:00 UTC
+    - cron: '0 0 * * 0'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build-lookup:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          persist-credentials: true
+
+      - name: Download Sigma rule file
+        run: |
+          curl -sL \
+            https://raw.githubusercontent.com/magicsword-io/LOLRMM/refs/heads/main/detections/sigma/generic_rmm_detection.yml \
+            -o rmm_process_names.yml
+
+      - name: Extract processes & write JSON lookup
+        run: |
+          mkdir -p LOLRMM-Processes
+          pip3 install pyyaml
+
+          python3 <<'EOF'
+          import yaml, json
+
+          # Load the Sigma rule
+          with open("rmm_process_names.yml") as f:
+              rule = yaml.safe_load(f)
+
+          # Grab the list under detection.selection["Image|endswith"]
+          processes = rule["detection"]["selection"]["Image|endswith"]
+          processes = sorted(processes)
+
+          # Build a dict with empty metadata objects
+          lookup = { dom: {} for dom in processes }
+
+          # Write as a JSON object
+          with open("LOLRMM-Processes/rmm-process-lookup-list.json", "w") as out:
+              json.dump(lookup, out, indent=2)
+          EOF
+
+      - name: Commit & push rmm-process-lookup-list.json
+        working-directory: ${{ github.workspace }}
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add LOLRMM-Processes/rmm-process-lookup-list.json
+          if git diff --cached --quiet; then
+            echo "No changes to LOLRMM-Processes/rmm-process-lookup-list.json"
+          else
+            git commit -m "chore: update RMM process lookup list"
+            git push
+          fi
