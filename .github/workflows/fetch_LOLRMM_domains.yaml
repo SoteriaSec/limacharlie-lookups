@@ -37,15 +37,26 @@ jobs:
           with open("rmm_domains_dns_queries.yml") as f:
               rule = yaml.safe_load(f)
 
-          # Grab the list under detection.selection["query|contains"]
-          domains = rule["detection"]["selection"]["query|contains"]
-          domains = sorted(domains)
+          # Raw list under detection.selection["query|contains"]
+          raw = rule["detection"]["selection"]["query|contains"]
 
-          # Build a dict with empty metadata objects
-          lookup = { dom: {} for dom in domains }
+          clean = set()
+          for entry in raw:
+              # strip any leading '.' or '*' characters
+              trimmed = entry.lstrip(".*")
+              # if it's a URL or path, take only the domain part before the first '/'
+              domain = trimmed.split("/", 1)[0]
+              if domain:
+                  clean.add(domain.lower())
 
-          # Write as a JSON object
-          with open("LOLRMM-Domains/rmm-domain-lookup-list.json", "w") as out:
+          domains = sorted(clean)
+
+          # Build lookup dict with empty metadata
+          lookup = { d: {} for d in domains }
+
+          # Write the JSON object
+          out_path = "LOLRMM-Domains/rmm-domain-lookup-list.json"
+          with open(out_path, "w") as out:
               json.dump(lookup, out, indent=2)
           EOF
 
