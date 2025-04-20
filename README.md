@@ -22,8 +22,9 @@ All Lookups in this repository are **automatically refreshed once a week**. You 
 
 ## 🛠️ Getting Started
 
-1. **Apply** the IaC YAML in your LimaCharlie Console or via the CLI to provision the Lookup and Detection Rules.  
-2. Add any **Detection** tuning or additional detections you'd like to use for each lookup.
+1. **Apply** the IaC YAML in your LimaCharlie Console or via the CLI to provision the Lookup and Detection Rules.
+2. **Manual Sync** in the Lookup Manager to ensure the new lookups are pulled into LimaCharlie.
+3. Add any additional **Detection** rules or tuning as needed for each lookup. There are default detections provided, however, you may needs to tune out any false positives.
 
 ## 🤝 Contributing
 
