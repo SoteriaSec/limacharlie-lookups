@@ -11,6 +11,16 @@ hives:
                   name: rmm-domains
                   tags:
                     - soteriasec
+                - arl: '[github,SoteriaSec/limacharlie-lookups/LOLRMM-Domains/rmm-ip-lookup-list.json]'
+                  format: json
+                  name: rmm-ips
+                  tags:
+                    - soteriasec
+                - arl: '[github,SoteriaSec/limacharlie-lookups/LOLRMM-Domains/rmm-urls-lookup-list.json]'
+                  format: json
+                  name: rmm-urls
+                  tags:
+                    - soteriasec
         usr_mtd:
             enabled: true
             expiry: 0
@@ -31,6 +41,32 @@ hives:
                     metadata:
                         author: Josh Lemon (SoteriaSec)
                         description: Detects DNS queries to known Remote Monitoring and Management (RMM) tool domains that could indicate unauthorized remote access
+                        falsepositives:
+                        - Legitimate usage of approved remote management tools
+                        level: medium
+                        references:
+                        - https://github.com/magicsword-io/LOLRMM
+                        tags:
+                        - attack.command_and_control
+                        - attack.t1219
+          usr_mtd:
+              enabled: true
+              expiry: 0
+              tags: []
+              comment: ""
+      RMM IP Lookup:
+          data:
+              detect:
+                event: NETWORK_CONNECTIONS
+                op: lookup
+                path: event/NETWORK_ACTIVITY/?/IP_ADDRESS
+                resource: lcr://lookup/rmm-ips
+              respond:
+                  - action: report
+                    name: RMM Tool IP Accessed
+                    metadata:
+                        author: Josh Lemon (SoteriaSec)
+                        description: Detects IPs accessed to known Remote Monitoring and Management (RMM) tool domains that could indicate unauthorized remote access
                         falsepositives:
                         - Legitimate usage of approved remote management tools
                         level: medium
