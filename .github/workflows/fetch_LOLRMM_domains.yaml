@@ -25,34 +25,31 @@ jobs:
             https://raw.githubusercontent.com/magicsword-io/LOLRMM/main/detections/sigma/rmm_domains_dns_queries.yml \
             -o rmm_domains_dns_queries.yml
 
+      - name: Install yq
+        run: |
+          curl -sL https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd64 \
+            -o /usr/local/bin/yq && chmod +x /usr/local/bin/yq
+
       - name: Extract domains & write JSON lookup
         run: |
           mkdir -p LOLRMM
+          # Pull out the array, one domain per line, then sort
+          domains=$(yq eval '.detection.selection."query|contains"[]' rmm_domains_dns_queries.yml | sort)
 
-          # pull out the lines under 'query|contains:' until the next non-list line
-          domains=$(awk '
-            /query\|contains:/ {in=1; next}
-            in && /^[[:space:]]*-/ {
-              sub(/^[[:space:]]*-\s*/, "")
-              print
-            }
-            in && !/^[[:space:]]*-/ && !/^[[:space:]]*$/ { exit }
-          ' rmm_domains_dns_queries.yml | sort)
-
-          # build a JSON array
+          # Build JSON array
           out=LOLRMM/rmm-domain-lookup-list.json
           {
-            printf "[\n"
-            first=1
+            echo '['
+            first=true
             while IFS= read -r d; do
-              if [ $first -eq 1 ]; then
-                printf "  \"%s\"\n" "$d"
-                first=0
+              if $first; then
+                printf '  "%s"\n' "$d"
+                first=false
               else
-                printf "  ,\"%s\"\n" "$d"
+                printf '  ,"%s"\n' "$d"
               fi
             done <<< "$domains"
-            printf "]\n"
+            echo ']'
           } > "$out"
 
       - name: Commit & push rmm-domain-lookup-list.json
