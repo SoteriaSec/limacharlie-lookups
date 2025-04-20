@@ -39,7 +39,7 @@ jobs:
           # Build JSON array
           out=LOLRMM/rmm-domain-lookup-list.json
           {
-            echo '['
+            echo '{'
             first=true
             while IFS= read -r d; do
               if $first; then
@@ -49,7 +49,7 @@ jobs:
                 printf '  ,"%s"\n' "$d"
               fi
             done <<< "$domains"
-            echo ']'
+            echo '}'
           } > "$out"
 
       - name: Commit & push rmm-domain-lookup-list.json
