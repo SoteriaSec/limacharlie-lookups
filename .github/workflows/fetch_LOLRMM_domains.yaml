@@ -25,32 +25,29 @@ jobs:
             https://raw.githubusercontent.com/magicsword-io/LOLRMM/main/detections/sigma/rmm_domains_dns_queries.yml \
             -o rmm_domains_dns_queries.yml
 
-      - name: Install yq
-        run: |
-          curl -sL https://github.com/mikefarah/yq/releases/latest/download/yq_linux_amd64 \
-            -o /usr/local/bin/yq && chmod +x /usr/local/bin/yq
-
       - name: Extract domains & write JSON lookup
         run: |
           mkdir -p LOLRMM
-          # Pull out the array, one domain per line, then sort
-          domains=$(yq eval '.detection.selection."query|contains"[]' rmm_domains_dns_queries.yml | sort)
+          pip3 install pyyaml
 
-          # Build JSON array
-          out=LOLRMM/rmm-domain-lookup-list.json
-          {
-            echo '{'
-            first=true
-            while IFS= read -r d; do
-              if $first; then
-                printf '  "%s"\n' "$d"
-                first=false
-              else
-                printf '  ,"%s"\n' "$d"
-              fi
-            done <<< "$domains"
-            echo '}'
-          } > "$out"
+          python3 <<'EOF'
+          import yaml, json
+
+          # Load the Sigma rule
+          with open("rmm_domains_dns_queries.yml") as f:
+              rule = yaml.safe_load(f)
+
+          # Grab the list under detection.selection["query|contains"]
+          domains = rule["detection"]["selection"]["query|contains"]
+          domains = sorted(domains)
+
+          # Build a dict with empty metadata objects
+          lookup = { dom: {} for dom in domains }
+
+          # Write as a JSON object
+          with open("LOLRMM/rmm-domain-lookup-list.json", "w") as out:
+              json.dump(lookup, out, indent=2)
+          EOF
 
       - name: Commit & push rmm-domain-lookup-list.json
         working-directory: ${{ github.workspace }}
