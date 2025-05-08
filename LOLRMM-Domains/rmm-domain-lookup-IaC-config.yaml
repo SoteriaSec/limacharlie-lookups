@@ -33,7 +33,7 @@ hives:
                 event: DNS_REQUEST
                 op: lookup
                 path: event/DOMAIN_NAME
-                resource: lcr://lookup/rmm-domains
+                resource: hive://lookup/rmm-domains
                 case sensitive: false
               respond:
                   - action: report
@@ -60,7 +60,7 @@ hives:
                 event: NETWORK_CONNECTIONS
                 op: lookup
                 path: event/NETWORK_ACTIVITY/?/IP_ADDRESS
-                resource: lcr://lookup/rmm-ips
+                resource: hive://lookup/rmm-ips
               respond:
                   - action: report
                     name: RMM Tool IP Accessed
