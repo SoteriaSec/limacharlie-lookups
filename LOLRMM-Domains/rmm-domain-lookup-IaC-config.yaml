@@ -21,10 +21,15 @@ hives:
           data:
               detect:
                 event: DNS_REQUEST
-                op: lookup
-                path: event/DOMAIN_NAME
-                resource: lcr://lookup/rmm-domains
-                case sensitive: false
+                op: and
+                rules:
+                  - op: is platform
+                    not: true
+                    name: chrome
+                  - op: lookup
+                    case sensitive: false
+                    path: event/DOMAIN_NAME
+                    resource: hive://lookup/rmm-domains
               respond:
                   - action: report
                     name: RMM Tool Domain Queried
