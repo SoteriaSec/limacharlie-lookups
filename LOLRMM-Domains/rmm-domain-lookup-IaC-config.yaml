@@ -104,7 +104,7 @@ hives:
                         description: Detects URLs accessed to known Remote Monitoring and Management (RMM) tool domains that could indicate unauthorized remote access. This only detects URLs in the browser.
                         falsepositives:
                         - Legitimate usage of approved remote management tools
-                        level: medium
+                        level: low
                         references:
                         - https://github.com/magicsword-io/LOLRMM
                         tags:
