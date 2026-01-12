@@ -1,325 +1,1076 @@
 {
-  " .nanosystems.it": {},
-  " .ultraviewer.net": {},
-  "-dms.zoho.com.cn": {},
-  "01com.com": {},
-  "247ithelp.com": {},
-  "a1-backend-packages.s3.amazonaws.com": {},
-  "action1.com": {},
-  "activation.netreo.net": {},
-  "adobeconnect.com": {},
-  "aeroadmin.com": {},
-  "agent-api.atera.com": {},
-  "agenthb.atera.com": {},
-  "agentreporting.atera.com": {},
-  "agentreportingstore.blob.core.windows.net": {},
-  "agents*-cloud.acronis.com": {},
-  "agents.addigy.com": {},
-  "agents.level.io": {},
-  "alpemix.com": {},
-  "ammyy.com": {},
-  "analytics.insight.rapid7.com": {},
-  "anydesk.com": {},
-  "anyplace-control.com": {},
-  "anysupport.net": {},
-  "anyviewer.com": {},
-  "aomeisoftware.com": {},
-  "api.jumpcloud.com": {},
-  "api.netreo.com": {},
-  "api.remote.it": {},
-  "api.splashtop.com": {},
-  "api.splashtop.eu": {},
-  "app.atera.com": {},
-  "app.deskday.ai": {},
-  "app.kabuto.io": {},
-  "app.pdq.com": {},
-  "app.syspectr.com": {},
-  "appcdn.atera.com": {},
-  "asapi*.aweray.net": {},
-  "assist.jumpcloud.com": {},
-  "assist.zoho.com": {},
-  "atera-agent-heartbeat.servicebus.windows.net": {},
-  "atera.pubnubapi.com": {},
-  "atled.syspectr.com": {},
-  "attachments.servably.com": {},
-  "auth*.aeroadmin.com": {},
-  "auth.api.remote.it": {},
-  "auvik.com": {},
-  "barracudamsp.com": {},
-  "basecamp.com": {},
-  "beamyourscreen.com": {},
-  "beanywhere.com": {},
-  "beinsync.com": {},
-  "beinsync.net": {},
-  "beyondtrustcloud.com": {},
-  "bluetrait.io": {},
-  "bomgarcloud.com": {},
-  "boot.net.anydesk.com": {},
-  "builds.level.io": {},
-  "cacerts.thawte.com": {},
-  "cc.centrastage.net": {},
-  "cell-1.domotz.com": {},
-  "centuriontech.com": {},
-  "cfcdn.pdq.com": {},
-  "changes.panorama9.com": {},
-  "charon.netreo.net": {},
-  "client-api.aweray.com": {},
-  "client.oray.net": {},
-  "client.teamviewer.com": {},
-  "cloud.acronis.com": {},
-  "cloud.tanium.com": {},
-  "cloudbackup.management": {},
-  "cloudberrylab.com": {},
-  "cmdm.comodo.com": {},
-  "cognito-idp.us-west-2.amazonaws.com": {},
-  "connect.acronis.com": {},
-  "connect.backdrop.cloud": {},
-  "connectwise.com": {},
-  "content.rview.com": {},
-  "control.connectwise.com": {},
-  "crossloop.com": {},
-  "crossloop.en.softonic.com": {},
-  "dameware.com": {},
-  "deploy01.kaseya.com": {},
-  "deskday.ai": {},
-  "deskroll.com": {},
-  "desktop.qq.com": {},
-  "desktopcentral.manageengine.cn": {},
-  "desktopcentral.manageengine.com": {},
-  "desktopcentral.manageengine.com.eu": {},
-  "desktopstreaming.com": {},
-  "devtunnels.ms": {},
-  "distantdesktop.com": {},
-  "dms.zoho.com": {},
-  "dms.zoho.com.eu": {},
-  "docs.tacticalrmm.com": {},
-  "domotz.co": {},
-  "domotz.com": {},
-  "donkz.nl": {},
-  "download.pilixo.com": {},
-  "downloads.io": {},
-  "downloads.zohocdn.com": {},
-  "downloads.zohodl.com.cn": {},
-  "dwservice.net": {},
-  "ehorus.com": {},
-  "electric.ai": {},
-  "emcosoftware.com": {},
-  "encapto.com": {},
-  "endpoint.ingress.rapid7.com": {},
-  "ericom.com": {},
-  "everywhere.laplink.com": {},
-  "ezhelp.co.kr": {},
-  "fastsupport.com": {},
-  "fastviewer.com": {},
-  "fixme.it": {},
-  "fleetdeck.io": {},
-  "fortra.com": {},
-  "gateway.zohoassist.com": {},
-  "gatherplace.com": {},
-  "gatherplace.net": {},
-  "geo.netsupportsoftware.com": {},
-  "getalphacontrol.com": {},
-  "getgo.com": {},
-  "getscreen.me": {},
-  "global.rel.tunnels.api.visualstudio.com": {},
-  "goto.com": {},
-  "gotoassist.at": {},
-  "gotoassist.com": {},
-  "gotoassist.me": {},
-  "gotohttp.com": {},
-  "gotomypc.com": {},
-  "goverlan.com": {},
-  "grtmprod.addigy.com": {},
-  "guacamole.apache.org": {},
-  "gw.remotix.com": {},
-  "helpbeam.software.informer.com": {},
-  "helpme.net": {},
-  "helpu.co.kr": {},
-  "hostedrmm.com": {},
-  "imperosoftware.com": {},
-  "instanthousecall.com": {},
-  "instanthousecall.net": {},
-  "intelliadmin.com": {},
-  "internetid.ru": {},
-  "iperius-rs.com": {},
-  "iperius.com": {},
-  "iperiusremote.com": {},
-  "islonline.com": {},
-  "islonline.net": {},
-  "itsm-us1.comodo.com": {},
-  "itsupport247.net": {},
-  "ivanti.com": {},
-  "ivanticloud.com": {},
-  "jumpdesktop.com": {},
-  "jumpto.me": {},
-  "kabuto.io": {},
-  "kabutoservices.com": {},
-  "kace.com": {},
-  "kaseya.com": {},
-  "kaseya.net": {},
-  "khelpdesk.com.br": {},
-  "kickidler.com": {},
-  "ld.aurelius.host": {},
-  "le.laplink.com": {},
-  "level.io": {},
-  "litemanager.com": {},
-  "litemanager.ru": {},
-  "live.screenconnect.com": {},
-  "logicnow.com": {},
-  "login.tailscale.com": {},
-  "logmein-gateway.com": {},
-  "logmein.com": {},
-  "logmein.eu": {},
-  "logmeininc.com": {},
-  "logmeinrescue.com": {},
-  "logmeinrescue.eu": {},
-  "managedsupport.kaseya.net": {},
-  "mdmsupport.comodo.com": {},
-  "mdt.qq.com": {},
-  "meshcentral.com": {},
-  "mikogo.com": {},
-  "mikogo4.com": {},
-  "mremoteng.org": {},
-  "msp360.com": {},
-  "mspbackups.com": {},
-  "my.auvik.com": {},
-  "my.kickidler.com": {},
-  "mygreenpc.com": {},
-  "myivo-server.software.informer.com": {},
-  "n-able.com": {},
-  "nate.com": {},
-  "naverisk.com": {},
-  "nchuser.com": {},
-  "netop.com": {},
-  "netreo.com": {},
-  "netsupportmanager.com": {},
-  "neturo.uplus.co.kr": {},
-  "ngrok.com": {},
-  "ninjaone.com": {},
-  "ninjarmm.com": {},
-  "nomachine.com": {},
-  "ntrsupport.com": {},
-  "ocsinventory-ng.org": {},
-  "one.comodo.com": {},
-  "online.level.io": {},
-  "opti-tune.com": {},
-  "optitune.us": {},
-  "packagesstore.blob.core.windows.net": {},
-  "panorama9.com": {},
-  "parallels.com": {},
-  "pcvisit.de": {},
-  "pilixo.com": {},
-  "plus*.site24x7.cn": {},
-  "plus*.site24x7.com": {},
-  "plus*.site24x7.eu": {},
-  "plus*.site24x7.in": {},
-  "plus*.site24x7.net.au": {},
-  "portal.ehorus.com": {},
-  "prod.addigy.com": {},
-  "ps.atera.com": {},
-  "ps.pndsn.com": {},
-  "pubsub.atera.com": {},
-  "pubsub.pubnub.com": {},
-  "pulseway.com": {},
-  "qq-messenger.en.softonic.com": {},
-  "radmin.com": {},
-  "real-time-collaboration.com": {},
-  "rel.tunnels.api.visualstudio.com": {},
-  "relay-[a-f0-9]{8}.net.anydesk.com:443": {},
-  "relay.splashtop.com": {},
-  "remobo.en.softonic.com": {},
-  "remote.it": {},
-  "remote.management": {},
-  "remoteaccess.itarian.com": {},
-  "remotecall.com": {},
-  "remotedesktop-pa.googleapis.com": {},
-  "remotedesktop.com": {},
-  "remotedesktop.google.com": {},
-  "remotepass.com": {},
-  "remotepc.com": {},
-  "remoteutilities.com": {},
-  "repairshopr.com": {},
-  "resources.ninjarmm.com": {},
-  "rmansys.ru": {},
-  "rmm.barracudamsp.com": {},
-  "rmm.datto.com": {},
-  "router15.teamviewer.com": {},
-  "royalapps.com": {},
-  "rport.io": {},
-  "rudesktop.ru": {},
-  "runsmart.io": {},
-  "rustdesk.com": {},
-  "rview.com": {},
-  "screenconnect.com": {},
-  "screenmeet.com": {},
-  "scrn.mt": {},
-  "search.namequery.com": {},
-  "secure.instanthousecall.com": {},
-  "seetrol.co.kr": {},
-  "senso.cloud": {},
-  "serv.superopsalpha.com": {},
-  "servably.com": {},
-  "server-eye.de": {},
-  "server.absolute.com": {},
-  "servicedesk.itarian.com": {},
-  "set.me": {},
-  "setme.net": {},
-  "showmypc.com": {},
-  "signalserver.xyz": {},
-  "simple-help.com": {},
-  "skyfex.com": {},
-  "sophos.com": {},
-  "sophosupd.com": {},
-  "sophosupd.net": {},
-  "sorillus.com": {},
-  "soti.net": {},
-  "splashtop.com": {},
-  "spyanywhere.com": {},
-  "spytech-web.com": {},
-  "startsupport.com": {},
-  "sunlogin.oray.com": {},
-  "superops.ai": {},
-  "superopsalpha.com": {},
-  "superopsbeta.com": {},
-  "support.services.microsoft.com": {},
-  "supremocontrol.com": {},
-  "swi-tc.com": {},
-  "syncroapi.com": {},
-  "syncromsp.com": {},
-  "system-monitor.com": {},
-  "systemmonitor.co.uk": {},
-  "systemmonitor.eu.com": {},
-  "systemmonitor.us": {},
-  "systemmonitor.us.cdn.cloudflare.net": {},
-  "taf.teamviewer.com": {},
-  "tailscale.com": {},
-  "tailscale.io": {},
-  "teamviewer.com": {},
-  "techinline.net": {},
-  "teknopars.com": {},
-  "tele-desk.com": {},
-  "tightvnc.com": {},
-  "todesk.com": {},
-  "todesktop.com": {},
-  "trusted.panorama9.com": {},
-  "ultraviewer.net": {},
-  "ultravnc.com": {},
-  "upload_data.qq.com": {},
-  "wangwang.taobao.com": {},
-  "web.rustdesk.com": {},
-  "weezo.en.softonic.com": {},
-  "weezo.me": {},
-  "weezo.net": {},
-  "www.remotepc.com": {},
-  "xeox.com": {},
-  "zabbix.com": {},
-  "zerotier.com": {},
-  "zoho.com": {},
-  "zoho.com.au": {},
-  "zoho.com.cn": {},
-  "zoho.eu": {},
-  "zoho.in": {},
-  "zohoassist.com": {},
-  "zohoassist.com.cn": {},
-  "zohoassist.jp": {}
+  "-dms.zoho.com.cn": {
+    "RMM Tool": "Manage Engine (Desktop Central)"
+  },
+  "01com.com": {
+    "RMM Tool": "I'm InTouch"
+  },
+  "247ithelp.com": {
+    "RMM Tool": "247ithelp.com (ConnectWise)"
+  },
+  "a1-backend-packages.s3.amazonaws.com": {
+    "RMM Tool": "Action1"
+  },
+  "action1.com": {
+    "RMM Tool": "Action1"
+  },
+  "activation.netreo.net": {
+    "RMM Tool": "Netreo"
+  },
+  "adobeconnect.com": {
+    "RMM Tool": "Adobe Connect"
+  },
+  "aeroadmin.com": {
+    "RMM Tool": "AeroAdmin"
+  },
+  "agent-api.atera.com": {
+    "RMM Tool": "Atera"
+  },
+  "agenthb.atera.com": {
+    "RMM Tool": "Atera"
+  },
+  "agentreporting.atera.com": {
+    "RMM Tool": "Atera"
+  },
+  "agentreportingstore.blob.core.windows.net": {
+    "RMM Tool": "Atera"
+  },
+  "agents*-cloud.acronis.com": {
+    "RMM Tool": "Acronis Cyber Protect (Remotix)"
+  },
+  "agents.addigy.com": {
+    "RMM Tool": "Addigy"
+  },
+  "agents.level.io": {
+    "RMM Tool": "Level"
+  },
+  "alpemix.com": {
+    "RMM Tool": "Alpemix"
+  },
+  "ammyy.com": {
+    "RMM Tool": "Ammyy Admin"
+  },
+  "analytics.insight.rapid7.com": {
+    "RMM Tool": "Rapid7"
+  },
+  "anydesk.com": {
+    "RMM Tool": "AnyDesk"
+  },
+  "anyplace-control.com": {
+    "RMM Tool": "Anyplace Control"
+  },
+  "anysupport.net": {
+    "RMM Tool": "Any Support"
+  },
+  "anyviewer.com": {
+    "RMM Tool": "AnyViewer"
+  },
+  "aomeisoftware.com": {
+    "RMM Tool": "AnyViewer"
+  },
+  "api.hoptodesk.com": {
+    "RMM Tool": "HopToDesk"
+  },
+  "api.jumpcloud.com": {
+    "RMM Tool": "Jump Cloud"
+  },
+  "api.netreo.com": {
+    "RMM Tool": "Netreo"
+  },
+  "api.remote.it": {
+    "RMM Tool": "Remote.it"
+  },
+  "api.rustdesk.com": {
+    "RMM Tool": "RustDesk"
+  },
+  "api.splashtop.com": {
+    "RMM Tool": "Splashtop Remote"
+  },
+  "api.splashtop.eu": {
+    "RMM Tool": "Splashtop Remote"
+  },
+  "app.atera.com": {
+    "RMM Tool": "Atera"
+  },
+  "app.deskday.ai": {
+    "RMM Tool": "DeskDay"
+  },
+  "app.gorelo.io": {
+    "RMM Tool": "Gorelo RMM"
+  },
+  "app.kabuto.io": {
+    "RMM Tool": "Syncro"
+  },
+  "app.pdq.com": {
+    "RMM Tool": "PDQ Connect"
+  },
+  "app.syspectr.com": {
+    "RMM Tool": "Syspectr"
+  },
+  "appcdn.atera.com": {
+    "RMM Tool": "Atera"
+  },
+  "asapi*.aweray.net": {
+    "RMM Tool": "AweRay"
+  },
+  "assist.jumpcloud.com": {
+    "RMM Tool": "Jump Cloud"
+  },
+  "assist.zoho.com": {
+    "RMM Tool": "Zoho Assist"
+  },
+  "atera-agent-heartbeat.servicebus.windows.net": {
+    "RMM Tool": "Atera"
+  },
+  "atera.pubnubapi.com": {
+    "RMM Tool": "Atera"
+  },
+  "atled.syspectr.com": {
+    "RMM Tool": "Syspectr"
+  },
+  "attachments.servably.com": {
+    "RMM Tool": "Syncro"
+  },
+  "auth*.aeroadmin.com": {
+    "RMM Tool": "AeroAdmin"
+  },
+  "auth.api.remote.it": {
+    "RMM Tool": "Remote.it"
+  },
+  "auvik.com": {
+    "RMM Tool": "Auvik"
+  },
+  "baramundi.com": {
+    "RMM Tool": "baramundi Management Suite"
+  },
+  "barracudamsp.com": {
+    "RMM Tool": "Barracuda"
+  },
+  "basecamp.com": {
+    "RMM Tool": "Basecamp"
+  },
+  "beamyourscreen.com": {
+    "RMM Tool": "BeamYourScreen"
+  },
+  "beanywhere.com": {
+    "RMM Tool": "BeAnyWhere"
+  },
+  "beinsync.com": {
+    "RMM Tool": "BeInSync"
+  },
+  "beinsync.net": {
+    "RMM Tool": "BeInSync"
+  },
+  "beyondtrustcloud.com": {
+    "RMM Tool": "BeyondTrust (Bomgar)"
+  },
+  "bluetrait.io": {
+    "RMM Tool": "Bluetrait"
+  },
+  "bomgarcloud.com": {
+    "RMM Tool": "BeyondTrust (Bomgar)"
+  },
+  "boot.net.anydesk.com": {
+    "RMM Tool": "AnyDesk"
+  },
+  "builds.level.io": {
+    "RMM Tool": "Level"
+  },
+  "cacerts.thawte.com": {
+    "RMM Tool": "Atera"
+  },
+  "cc.centrastage.net": {
+    "RMM Tool": "CentraStage (Now Datto)"
+  },
+  "cdn.getgo.com": {
+    "RMM Tool": "GoToAssist"
+  },
+  "cell-1.domotz.com": {
+    "RMM Tool": "Domotz"
+  },
+  "centuriontech.com": {
+    "RMM Tool": "Centurion"
+  },
+  "cfcdn.pdq.com": {
+    "RMM Tool": "PDQ Connect"
+  },
+  "changes.panorama9.com": {
+    "RMM Tool": "Panorama9"
+  },
+  "charon.netreo.net": {
+    "RMM Tool": "Netreo"
+  },
+  "chromoting-client.talkgadget.google.com": {
+    "RMM Tool": "Chrome Remote Desktop"
+  },
+  "chromoting-host.talkgadget.google.com": {
+    "RMM Tool": "Chrome Remote Desktop"
+  },
+  "chromoting-oauth.talkgadget.google.com": {
+    "RMM Tool": "Chrome Remote Desktop"
+  },
+  "client-api.aweray.com": {
+    "RMM Tool": "AweRay"
+  },
+  "client.oray.net": {
+    "RMM Tool": "SunLogin"
+  },
+  "client.teamviewer.com": {
+    "RMM Tool": "TeamViewer"
+  },
+  "cloud.acronis.com": {
+    "RMM Tool": "Acronis Cyber Protect (Remotix)"
+  },
+  "cloud.tanium.com": {
+    "RMM Tool": "Tanium"
+  },
+  "cloudbackup.management": {
+    "RMM Tool": "N-Able Advanced Monitoring Agent"
+  },
+  "cloudberrylab.com": {
+    "RMM Tool": "MSP360"
+  },
+  "cmdm.comodo.com": {
+    "RMM Tool": "Itarian"
+  },
+  "cognito-idp.us-west-2.amazonaws.com": {
+    "RMM Tool": "FleetDeck.io"
+  },
+  "connect.acronis.com": {
+    "RMM Tool": "Acronis Cyber Protect (Remotix)"
+  },
+  "connect.ap.ngrok-agent.com": {
+    "RMM Tool": "ngrok"
+  },
+  "connect.au.ngrok-agent.com": {
+    "RMM Tool": "ngrok"
+  },
+  "connect.backdrop.cloud": {
+    "RMM Tool": "Netop Remote Control (Impero Connect)"
+  },
+  "connect.eu.ngrok-agent.com": {
+    "RMM Tool": "ngrok"
+  },
+  "connect.in.ngrok-agent.com": {
+    "RMM Tool": "ngrok"
+  },
+  "connect.jp.ngrok-agent.com": {
+    "RMM Tool": "ngrok"
+  },
+  "connect.ngrok-agent.com": {
+    "RMM Tool": "ngrok"
+  },
+  "connect.sa.ngrok-agent.com": {
+    "RMM Tool": "ngrok"
+  },
+  "connect.us.ngrok-agent.com": {
+    "RMM Tool": "ngrok"
+  },
+  "connectwise.com": {
+    "RMM Tool": "ScreenConnect"
+  },
+  "content.rview.com": {
+    "RMM Tool": "RemoteView"
+  },
+  "control.connectwise.com": {
+    "RMM Tool": "ConnectWise Control"
+  },
+  "crossloop.com": {
+    "RMM Tool": "CrossLoop"
+  },
+  "crossloop.en.softonic.com": {
+    "RMM Tool": "CrossLoop"
+  },
+  "dameware.com": {
+    "RMM Tool": "DameWare"
+  },
+  "deploy01.kaseya.com": {
+    "RMM Tool": "Kaseya (VSA)"
+  },
+  "deskday.ai": {
+    "RMM Tool": "DeskDay"
+  },
+  "deskroll.com": {
+    "RMM Tool": "SkyFex"
+  },
+  "desktop.qq.com": {
+    "RMM Tool": "QQ IM-remote assistance"
+  },
+  "desktopcentral.manageengine.cn": {
+    "RMM Tool": "Manage Engine (Desktop Central)"
+  },
+  "desktopcentral.manageengine.com": {
+    "RMM Tool": "Manage Engine (Desktop Central)"
+  },
+  "desktopcentral.manageengine.com.eu": {
+    "RMM Tool": "Manage Engine (Desktop Central)"
+  },
+  "desktopstreaming.com": {
+    "RMM Tool": "GoToAssist"
+  },
+  "devtunnels.ms": {
+    "RMM Tool": "Visual Studio Dev Tunnel"
+  },
+  "distantdesktop.com": {
+    "RMM Tool": "Distant Desktop"
+  },
+  "dms.zoho.com": {
+    "RMM Tool": "Manage Engine (Desktop Central)"
+  },
+  "dms.zoho.com.eu": {
+    "RMM Tool": "Manage Engine (Desktop Central)"
+  },
+  "docs.baramundi.com": {
+    "RMM Tool": "baramundi Management Suite"
+  },
+  "docs.tacticalrmm.com": {
+    "RMM Tool": "Tactical RMM"
+  },
+  "domotz.co": {
+    "RMM Tool": "Domotz"
+  },
+  "domotz.com": {
+    "RMM Tool": "Domotz"
+  },
+  "donkz.nl": {
+    "RMM Tool": "Remote Desktop Plus"
+  },
+  "download.pilixo.com": {
+    "RMM Tool": "Pilixo"
+  },
+  "downloads.io": {
+    "RMM Tool": "Level"
+  },
+  "downloads.zohocdn.com": {
+    "RMM Tool": "Zoho Assist"
+  },
+  "downloads.zohodl.com.cn": {
+    "RMM Tool": "Zoho Assist"
+  },
+  "dwservice.net": {
+    "RMM Tool": "DW Service"
+  },
+  "ehorus.com": {
+    "RMM Tool": "eHorus"
+  },
+  "electric.ai": {
+    "RMM Tool": "Electric AI (Kaseya)"
+  },
+  "emcosoftware.com": {
+    "RMM Tool": "EMCO Remote Console"
+  },
+  "encapto.com": {
+    "RMM Tool": "Encapto"
+  },
+  "endpoint.ingress.rapid7.com": {
+    "RMM Tool": "Rapid7"
+  },
+  "ericom.com": {
+    "RMM Tool": "Ericom Connect"
+  },
+  "everywhere.laplink.com": {
+    "RMM Tool": "Laplink Everywhere"
+  },
+  "ezhelp.co.kr": {
+    "RMM Tool": "ezHelp"
+  },
+  "fastsupport.com": {
+    "RMM Tool": "GoToAssist"
+  },
+  "fastviewer.com": {
+    "RMM Tool": "FastViewer"
+  },
+  "fixme.it": {
+    "RMM Tool": "FixMe.it"
+  },
+  "fleetdeck.io": {
+    "RMM Tool": "FleetDeck.io"
+  },
+  "fortra.com": {
+    "RMM Tool": "Fortra"
+  },
+  "gateway.zohoassist.com": {
+    "RMM Tool": "Zoho Assist"
+  },
+  "gatherplace.com": {
+    "RMM Tool": "GatherPlace-desktop sharing"
+  },
+  "gatherplace.net": {
+    "RMM Tool": "GatherPlace-desktop sharing"
+  },
+  "geo.netsupportsoftware.com": {
+    "RMM Tool": "NetSupport Manager"
+  },
+  "getalphacontrol.com": {
+    "RMM Tool": "Atera"
+  },
+  "getgo.com": {
+    "RMM Tool": "GoToAssist"
+  },
+  "getscreen.me": {
+    "RMM Tool": "GetScreen"
+  },
+  "global.rel.tunnels.api.visualstudio.com": {
+    "RMM Tool": "Visual Studio Dev Tunnel"
+  },
+  "gorelo-rmm.azurewebsites.net": {
+    "RMM Tool": "Gorelo RMM"
+  },
+  "goto.com": {
+    "RMM Tool": "GoToAssist"
+  },
+  "gotoassist.at": {
+    "RMM Tool": "GoToAssist"
+  },
+  "gotoassist.com": {
+    "RMM Tool": "GoToAssist"
+  },
+  "gotoassist.me": {
+    "RMM Tool": "GoToAssist"
+  },
+  "gotohttp.com": {
+    "RMM Tool": "GotoHTTP"
+  },
+  "gotomypc.com": {
+    "RMM Tool": "GoToMyPC"
+  },
+  "goverlan.com": {
+    "RMM Tool": "Goverlan"
+  },
+  "grtmprod.addigy.com": {
+    "RMM Tool": "Addigy"
+  },
+  "guacamole.apache.org": {
+    "RMM Tool": "Guacamole"
+  },
+  "gw.remotix.com": {
+    "RMM Tool": "Acronis Cyber Protect (Remotix)"
+  },
+  "gw.usw.gorelo.tech": {
+    "RMM Tool": "Gorelo RMM"
+  },
+  "helpbeam.software.informer.com": {
+    "RMM Tool": "HelpBeam"
+  },
+  "helpme.net": {
+    "RMM Tool": "GoToAssist"
+  },
+  "helpu.co.kr": {
+    "RMM Tool": "HelpU"
+  },
+  "hostedrmm.com": {
+    "RMM Tool": "Connectwise Automate (LabTech)"
+  },
+  "imperosoftware.com": {
+    "RMM Tool": "Impero Connect"
+  },
+  "instanthousecall.com": {
+    "RMM Tool": "Instant Housecall"
+  },
+  "instanthousecall.net": {
+    "RMM Tool": "Instant Housecall"
+  },
+  "intelliadmin.com": {
+    "RMM Tool": "IntelliAdmin Remote Control"
+  },
+  "internetid.ru": {
+    "RMM Tool": "Remote Manipulator System"
+  },
+  "iperius-rs.com": {
+    "RMM Tool": "Iperius Remote"
+  },
+  "iperius.com": {
+    "RMM Tool": "Iperius Remote"
+  },
+  "iperiusremote.com": {
+    "RMM Tool": "Iperius Remote"
+  },
+  "islonline.com": {
+    "RMM Tool": "ISL Online"
+  },
+  "islonline.net": {
+    "RMM Tool": "ISL Online"
+  },
+  "isodownload.baramundi.com": {
+    "RMM Tool": "baramundi Management Suite"
+  },
+  "itsm-us1.comodo.com": {
+    "RMM Tool": "Comodo RMM"
+  },
+  "itsupport247.net": {
+    "RMM Tool": "ITSupport247 (ConnectWise)"
+  },
+  "ivanti.com": {
+    "RMM Tool": "LANDesk"
+  },
+  "ivanticloud.com": {
+    "RMM Tool": "LANDesk"
+  },
+  "jumpdesktop.com": {
+    "RMM Tool": "Jump Desktop"
+  },
+  "jumpto.me": {
+    "RMM Tool": "Jump Desktop"
+  },
+  "kabuto.io": {
+    "RMM Tool": "Syncro"
+  },
+  "kabutoservices.com": {
+    "RMM Tool": "Syncro"
+  },
+  "kace.com": {
+    "RMM Tool": "Quest KACE Agent (formerly Dell KACE)"
+  },
+  "kaseya.com": {
+    "RMM Tool": "Kaseya (VSA)"
+  },
+  "kaseya.net": {
+    "RMM Tool": "Kaseya (VSA)"
+  },
+  "khelpdesk.com.br": {
+    "RMM Tool": "KHelpDesk"
+  },
+  "kickidler.com": {
+    "RMM Tool": "KickIdler"
+  },
+  "ld.aurelius.host": {
+    "RMM Tool": "Syncro"
+  },
+  "le.laplink.com": {
+    "RMM Tool": "Laplink Everywhere"
+  },
+  "level.io": {
+    "RMM Tool": "Level.io"
+  },
+  "litemanager.com": {
+    "RMM Tool": "LiteManager"
+  },
+  "litemanager.ru": {
+    "RMM Tool": "LiteManager"
+  },
+  "live.screenconnect.com": {
+    "RMM Tool": "ConnectWise Control"
+  },
+  "logicnow.com": {
+    "RMM Tool": "N-Able Advanced Monitoring Agent"
+  },
+  "login.tailscale.com": {
+    "RMM Tool": "Tactical RMM"
+  },
+  "logmein-gateway.com": {
+    "RMM Tool": "LogMeIn"
+  },
+  "logmein.com": {
+    "RMM Tool": "LogMeIn"
+  },
+  "logmein.eu": {
+    "RMM Tool": "LogMeIn"
+  },
+  "logmeininc.com": {
+    "RMM Tool": "LogMeIn"
+  },
+  "logmeinrescue.com": {
+    "RMM Tool": "LogMeIn"
+  },
+  "logmeinrescue.eu": {
+    "RMM Tool": "LogMeIn rescue"
+  },
+  "lr.rmm.pod1.usw.gorelo.tech": {
+    "RMM Tool": "Gorelo RMM"
+  },
+  "managedsupport.kaseya.net": {
+    "RMM Tool": "Kaseya (VSA)"
+  },
+  "mdmsupport.comodo.com": {
+    "RMM Tool": "Comodo RMM"
+  },
+  "mdt.qq.com": {
+    "RMM Tool": "QQ IM-remote assistance"
+  },
+  "meshcentral.com": {
+    "RMM Tool": "MeshCentral"
+  },
+  "mikogo.com": {
+    "RMM Tool": "Mikogo"
+  },
+  "mikogo4.com": {
+    "RMM Tool": "Mikogo"
+  },
+  "mremoteng.org": {
+    "RMM Tool": "mRemoteNG"
+  },
+  "msp360.com": {
+    "RMM Tool": "MSP360"
+  },
+  "mspbackups.com": {
+    "RMM Tool": "MSP360"
+  },
+  "my.auvik.com": {
+    "RMM Tool": "Auvik"
+  },
+  "my.kickidler.com": {
+    "RMM Tool": "KickIdler"
+  },
+  "mygreenpc.com": {
+    "RMM Tool": "MyGreenPC"
+  },
+  "myivo-server.software.informer.com": {
+    "RMM Tool": "MyIVO"
+  },
+  "n-able.com": {
+    "RMM Tool": "N-Able Advanced Monitoring Agent"
+  },
+  "naverisk.com": {
+    "RMM Tool": "Naverisk"
+  },
+  "nchuser.com": {
+    "RMM Tool": "DesktopNow"
+  },
+  "netop.com": {
+    "RMM Tool": "Netop Remote Control (Impero Connect)"
+  },
+  "netreo.com": {
+    "RMM Tool": "Netreo"
+  },
+  "netsupportmanager.com": {
+    "RMM Tool": "NetSupport Manager"
+  },
+  "neturo.uplus.co.kr": {
+    "RMM Tool": "Neturo"
+  },
+  "ngrok.com": {
+    "RMM Tool": "ngrok"
+  },
+  "ninja-backup.com": {
+    "RMM Tool": "NinjaRMM"
+  },
+  "ninjaone.com": {
+    "RMM Tool": "NinjaRMM"
+  },
+  "ninjarmm.com": {
+    "RMM Tool": "NinjaRMM"
+  },
+  "ninjarmm.net": {
+    "RMM Tool": "NinjaRMM"
+  },
+  "nomachine.com": {
+    "RMM Tool": "NoMachine"
+  },
+  "ntrsupport.com": {
+    "RMM Tool": "NTR Remote"
+  },
+  "ocsinventory-ng.org": {
+    "RMM Tool": "OCS inventory"
+  },
+  "one.comodo.com": {
+    "RMM Tool": "Comodo RMM"
+  },
+  "online.level.io": {
+    "RMM Tool": "Level"
+  },
+  "opti-tune.com": {
+    "RMM Tool": "OptiTune"
+  },
+  "optitune.us": {
+    "RMM Tool": "OptiTune"
+  },
+  "packagesstore.blob.core.windows.net": {
+    "RMM Tool": "Atera"
+  },
+  "panorama9.com": {
+    "RMM Tool": "Panorama9"
+  },
+  "parallels.com": {
+    "RMM Tool": "Parallels Access"
+  },
+  "parsec.app": {
+    "RMM Tool": "Parsec"
+  },
+  "parsec.gg": {
+    "RMM Tool": "Parsec"
+  },
+  "pcvisit.de": {
+    "RMM Tool": "Pcvisit"
+  },
+  "pdqinstallers.*.r2.cloudflarestorage.com": {
+    "RMM Tool": "PDQ Connect"
+  },
+  "pilixo.com": {
+    "RMM Tool": "Pilixo"
+  },
+  "plus*.site24x7.cn": {
+    "RMM Tool": "Site24x7"
+  },
+  "plus*.site24x7.com": {
+    "RMM Tool": "Site24x7"
+  },
+  "plus*.site24x7.eu": {
+    "RMM Tool": "Site24x7"
+  },
+  "plus*.site24x7.in": {
+    "RMM Tool": "Site24x7"
+  },
+  "plus*.site24x7.net.au": {
+    "RMM Tool": "Site24x7"
+  },
+  "portal.ehorus.com": {
+    "RMM Tool": "Pandora RC (eHorus)"
+  },
+  "prod.addigy.com": {
+    "RMM Tool": "Addigy"
+  },
+  "ps.atera.com": {
+    "RMM Tool": "Atera"
+  },
+  "ps.pndsn.com": {
+    "RMM Tool": "Atera"
+  },
+  "public.rmm.pod1.usw.gorelo.tech": {
+    "RMM Tool": "Gorelo RMM"
+  },
+  "pubsub.atera.com": {
+    "RMM Tool": "Atera"
+  },
+  "pubsub.pubnub.com": {
+    "RMM Tool": "Atera"
+  },
+  "pulseway.com": {
+    "RMM Tool": "Pulseway"
+  },
+  "qq-messenger.en.softonic.com": {
+    "RMM Tool": "QQ IM-remote assistance"
+  },
+  "r1.rmm.uw.gorelo.tech": {
+    "RMM Tool": "Gorelo RMM"
+  },
+  "radmin.com": {
+    "RMM Tool": "RAdmin"
+  },
+  "real-time-collaboration.com": {
+    "RMM Tool": "Mikogo"
+  },
+  "rel.tunnels.api.visualstudio.com": {
+    "RMM Tool": "Visual Studio Dev Tunnel"
+  },
+  "relay-[a-f0-9]{8}.net.anydesk.com:443": {
+    "RMM Tool": "AnyDesk"
+  },
+  "relay.splashtop.com": {
+    "RMM Tool": "Splashtop Remote"
+  },
+  "remobo.en.softonic.com": {
+    "RMM Tool": "Remobo"
+  },
+  "remote.it": {
+    "RMM Tool": "Remote.it"
+  },
+  "remote.management": {
+    "RMM Tool": "N-Able Advanced Monitoring Agent"
+  },
+  "remoteaccess.itarian.com": {
+    "RMM Tool": "Itarian"
+  },
+  "remotecall.com": {
+    "RMM Tool": "RemoteCall"
+  },
+  "remotedesktop-pa.googleapis.com": {
+    "RMM Tool": "Chrome Remote Desktop"
+  },
+  "remotedesktop.com": {
+    "RMM Tool": "RemotePC"
+  },
+  "remotedesktop.google.com": {
+    "RMM Tool": "Chrome Remote Desktop"
+  },
+  "remotepass.com": {
+    "RMM Tool": "RemotePass"
+  },
+  "remotepc.com": {
+    "RMM Tool": "RemotePC"
+  },
+  "remoteutilities.com": {
+    "RMM Tool": "RemoteUtilities"
+  },
+  "repairshopr.com": {
+    "RMM Tool": "Syncro"
+  },
+  "rescue-data-cetner.logmein-gateway.com": {
+    "RMM Tool": "LogMeIn rescue"
+  },
+  "rescue-list.*.logmein-gateway.com": {
+    "RMM Tool": "LogMeIn rescue"
+  },
+  "resources.ninjarmm.com": {
+    "RMM Tool": "NinjaRMM"
+  },
+  "rmansys.ru": {
+    "RMM Tool": "Remote Manipulator System"
+  },
+  "rmm.barracudamsp.com": {
+    "RMM Tool": "Barracuda"
+  },
+  "rmm.datto.com": {
+    "RMM Tool": "CentraStage (Now Datto)"
+  },
+  "rmmservice.ca": {
+    "RMM Tool": "NinjaRMM"
+  },
+  "rmmservice.com.au": {
+    "RMM Tool": "NinjaRMM"
+  },
+  "rmmservice.eu": {
+    "RMM Tool": "NinjaRMM"
+  },
+  "router15.teamviewer.com": {
+    "RMM Tool": "TeamViewer"
+  },
+  "royalapps.com": {
+    "RMM Tool": "Royal TS"
+  },
+  "rport.io": {
+    "RMM Tool": "RPort"
+  },
+  "rs-ny.rustdesk.com": {
+    "RMM Tool": "RustDesk"
+  },
+  "rudesktop.ru": {
+    "RMM Tool": "RuDesktop"
+  },
+  "runsmart.io": {
+    "RMM Tool": "RunSmart"
+  },
+  "rustdesk.com": {
+    "RMM Tool": "RustDesk"
+  },
+  "rview.com": {
+    "RMM Tool": "RemoteView"
+  },
+  "screenconnect.com": {
+    "RMM Tool": "ScreenConnect"
+  },
+  "screenmeet.com": {
+    "RMM Tool": "ScreenMeet"
+  },
+  "scrn.mt": {
+    "RMM Tool": "ScreenMeet"
+  },
+  "search.namequery.com": {
+    "RMM Tool": "Absolute (Computrace)"
+  },
+  "secure.instanthousecall.com": {
+    "RMM Tool": "Instant Housecall"
+  },
+  "seetrol.co.kr": {
+    "RMM Tool": "Seetrol"
+  },
+  "senso.cloud": {
+    "RMM Tool": "Senso.cloud"
+  },
+  "serv.superopsalpha.com": {
+    "RMM Tool": "SuperOps"
+  },
+  "servably.com": {
+    "RMM Tool": "Syncro"
+  },
+  "server-eye.de": {
+    "RMM Tool": "ServerEye"
+  },
+  "server.absolute.com": {
+    "RMM Tool": "Absolute (Computrace)"
+  },
+  "servicedesk.itarian.com": {
+    "RMM Tool": "Itarian"
+  },
+  "set.me": {
+    "RMM Tool": "FixMe.it"
+  },
+  "setme.net": {
+    "RMM Tool": "FixMe.it"
+  },
+  "showmypc.com": {
+    "RMM Tool": "ShowMyPC"
+  },
+  "signal.hoptodesk.com": {
+    "RMM Tool": "HopToDesk"
+  },
+  "signalserver.xyz": {
+    "RMM Tool": "Distant Desktop"
+  },
+  "simple-help.com": {
+    "RMM Tool": "SimpleHelp"
+  },
+  "skyfex.com": {
+    "RMM Tool": "SkyFex"
+  },
+  "sophos.com": {
+    "RMM Tool": "Sophos-Remote Management System"
+  },
+  "sophosupd.com": {
+    "RMM Tool": "Sophos-Remote Management System"
+  },
+  "sophosupd.net": {
+    "RMM Tool": "Sophos-Remote Management System"
+  },
+  "sorillus.com": {
+    "RMM Tool": "Sorillus"
+  },
+  "soti.net": {
+    "RMM Tool": "Pocket Controller (Soti Xsight)"
+  },
+  "splashtop.com": {
+    "RMM Tool": "Splashtop"
+  },
+  "spyanywhere.com": {
+    "RMM Tool": "SpyAnywhere"
+  },
+  "spytech-web.com": {
+    "RMM Tool": "SpyAnywhere"
+  },
+  "sr.rmm.pod1.usw.gorelo.tech": {
+    "RMM Tool": "Gorelo RMM"
+  },
+  "startsupport.com": {
+    "RMM Tool": "RemoteCall"
+  },
+  "sunlogin.oray.com": {
+    "RMM Tool": "SunLogin"
+  },
+  "superops.ai": {
+    "RMM Tool": "SuperOps"
+  },
+  "superopsalpha.com": {
+    "RMM Tool": "SuperOps"
+  },
+  "superopsbeta.com": {
+    "RMM Tool": "SuperOps"
+  },
+  "support.services.microsoft.com": {
+    "RMM Tool": "Microsoft Quick Assist"
+  },
+  "supremocontrol.com": {
+    "RMM Tool": "Supremo"
+  },
+  "swi-tc.com": {
+    "RMM Tool": "N-Able Advanced Monitoring Agent"
+  },
+  "syncroapi.com": {
+    "RMM Tool": "Syncro"
+  },
+  "syncromsp.com": {
+    "RMM Tool": "Syncro"
+  },
+  "system-monitor.com": {
+    "RMM Tool": "N-Able Advanced Monitoring Agent"
+  },
+  "systemmonitor.co.uk": {
+    "RMM Tool": "N-Able Advanced Monitoring Agent"
+  },
+  "systemmonitor.eu.com": {
+    "RMM Tool": "N-Able Advanced Monitoring Agent"
+  },
+  "systemmonitor.us": {
+    "RMM Tool": "N-Able Advanced Monitoring Agent"
+  },
+  "systemmonitor.us.cdn.cloudflare.net": {
+    "RMM Tool": "N-Able Advanced Monitoring Agent"
+  },
+  "taf.teamviewer.com": {
+    "RMM Tool": "TeamViewer"
+  },
+  "tailscale.com": {
+    "RMM Tool": "Tailscale"
+  },
+  "tailscale.io": {
+    "RMM Tool": "Tailscale"
+  },
+  "teamviewer.com": {
+    "RMM Tool": "TeamViewer"
+  },
+  "techinline.net": {
+    "RMM Tool": "FixMe.it"
+  },
+  "teknopars.com": {
+    "RMM Tool": "Alpemix"
+  },
+  "tele-desk.com": {
+    "RMM Tool": "TeleDesktop"
+  },
+  "tightvnc.com": {
+    "RMM Tool": "TightVNC"
+  },
+  "todesk.com": {
+    "RMM Tool": "ToDesk"
+  },
+  "todesktop.com": {
+    "RMM Tool": "ToDesk"
+  },
+  "trusted.panorama9.com": {
+    "RMM Tool": "Panorama9"
+  },
+  "turn.hoptodesk.com": {
+    "RMM Tool": "HopToDesk"
+  },
+  "ultraviewer.net": {
+    "RMM Tool": "UltraViewer"
+  },
+  "ultravnc.com": {
+    "RMM Tool": "UltraVNC"
+  },
+  "upload_data.qq.com": {
+    "RMM Tool": "QQ IM-remote assistance"
+  },
+  "wangwang.taobao.com": {
+    "RMM Tool": "AliWangWang-remote-control"
+  },
+  "web.rustdesk.com": {
+    "RMM Tool": "RustDesk"
+  },
+  "weezo.en.softonic.com": {
+    "RMM Tool": "Weezo"
+  },
+  "weezo.me": {
+    "RMM Tool": "Weezo"
+  },
+  "weezo.net": {
+    "RMM Tool": "Weezo"
+  },
+  "www.baramundi.com": {
+    "RMM Tool": "baramundi Management Suite"
+  },
+  "www.remotepc.com": {
+    "RMM Tool": "RemotePC"
+  },
+  "xeox.com": {
+    "RMM Tool": "Xeox"
+  },
+  "zabbix.com": {
+    "RMM Tool": "Zabbix Agent"
+  },
+  "zerotier.com": {
+    "RMM Tool": "ZeroTier"
+  },
+  "zoho.com": {
+    "RMM Tool": "Zoho Assist"
+  },
+  "zoho.com.au": {
+    "RMM Tool": "Zoho Assist"
+  },
+  "zoho.com.cn": {
+    "RMM Tool": "Zoho Assist"
+  },
+  "zoho.eu": {
+    "RMM Tool": "Zoho Assist"
+  },
+  "zoho.in": {
+    "RMM Tool": "Zoho Assist"
+  },
+  "zohoassist.com": {
+    "RMM Tool": "Zoho Assist"
+  },
+  "zohoassist.com.cn": {
+    "RMM Tool": "Zoho Assist"
+  },
+  "zohoassist.jp": {
+    "RMM Tool": "Zoho Assist"
+  }
 }

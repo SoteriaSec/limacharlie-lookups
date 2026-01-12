@@ -45,7 +45,7 @@ hives:
                     name: RMM Tool Domain Queried
                     metadata:
                         author: Josh Lemon (SoteriaSec)
-                        description: Detects DNS queries to known Remote Monitoring and Management (RMM) tool domains that could indicate unauthorized remote access
+                        description: Detects DNS queries to known Remote Monitoring and Management (RMM) tool domains that could indicate unauthorized remote access. Excludes Chrome to avoid users brwosing websites.
                         falsepositives:
                         - Legitimate usage of approved remote management tools
                         level: medium
@@ -72,6 +72,36 @@ hives:
                     metadata:
                         author: Josh Lemon (SoteriaSec)
                         description: Detects IPs accessed to known Remote Monitoring and Management (RMM) tool domains that could indicate unauthorized remote access
+                        falsepositives:
+                        - Legitimate usage of approved remote management tools
+                        level: medium
+                        references:
+                        - https://github.com/magicsword-io/LOLRMM
+                        tags:
+                        - attack.command_and_control
+                        - attack.t1219
+          usr_mtd:
+              enabled: true
+              expiry: 0
+              tags: []
+              comment: ""
+      RMM URL Lookup:
+          data:
+              detect:
+                event: HTTP_REQUEST
+                op: and
+                rules:
+                  - op: is platform
+                    name: chrome
+                  - op: lookup
+                    path: event/URL
+                    resource: hive://lookup/rmm-urls
+              respond:
+                  - action: report
+                    name: RMM Tool URL Accessed
+                    metadata:
+                        author: Josh Lemon (SoteriaSec)
+                        description: Detects URLs accessed to known Remote Monitoring and Management (RMM) tool domains that could indicate unauthorized remote access. This only detects URLs in the browser.
                         falsepositives:
                         - Legitimate usage of approved remote management tools
                         level: medium

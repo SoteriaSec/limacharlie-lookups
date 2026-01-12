@@ -17,8 +17,8 @@ All Lookups in this repository are **automatically refreshed once a week**. You 
 
 ## 🚀 Included Lookups
 
-- **LOLRMM-Domains**  
-  [Infrastructure‑as‑Code for the LOLRMM domain DNS lookup](LOLRMM-Domains/rmm-domain-lookup-IaC-config.yaml), sourced from [LOLRMM.io](https://lolrmm.io/).
+- **LOLRMM Domains, IPs and URLs**  
+  [Infrastructure‑as‑Code for the LOLRMM lookup](LOLRMM-Domains/rmm-domain-lookup-IaC-config.yaml), sourced from [LOLRMM.io](https://lolrmm.io/).
 
 ## 🛠️ Getting Started
 
@@ -36,7 +36,7 @@ We welcome your feedback and contributions!
 
 ## Need More Help
 
-Reach out to [SoteriaSec](https://soteriasec.io) directly if you need assistance with LimaCharlie, security operations, threat detection, or incident response in general.
+Reach out to [SoteriaSec](https://soteriasec.com) directly if you need assistance with LimaCharlie, security operations, threat detection, or incident response in general.
 
 ## Disclaimer
 
@@ -44,4 +44,4 @@ The lookup lists and detection rules provided in this repository are for communi
 
 ---
 
-© 2025 [SoteriaSec](https://soteriasec.io). All rights reserved.  
+© 2026 [SoteriaSec](https://soteriasec.com). All rights reserved.  

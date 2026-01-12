@@ -1,30 +1,176 @@
 {
-  "01com.com/imintouch-remote-pc-desktop": {},
-  "acceo.com/turbomeeting/": {},
-  "au.pcmag.com/utilities/21470/webex-pcnow": {},
-  "beanywhere.en.uptodown.com/windows": {},
-  "cloudflare.com/products/tunnel/": {},
-  "community.sophos.com/on-premise-endpoint/f/sophos-endpoint-software/5725/sophos-remote-management-system": {},
-  "crosstecsoftware.com/remotecontrol": {},
-  "datto.com/au/products/rmm/": {},
-  "download.cnet.com/net-viewer/3000-2370_4-10034828.html": {},
-  "eset.com/me/business/remote-management/remote-administrator/": {},
-  "github.com/mikej81/webrdp": {},
-  "github.com/stascorp/rdpwrap": {},
-  "github.com/v-e-o/rdp2tcp": {},
-  "imperosoftware.com/impero-connect/": {},
-  "intelliadmin.com/remote-control": {},
-  "ivanti.com/": {},
-  "learn.microsoft.com/en-us/azure/developer/dev-tunnels/overview": {},
-  "manageengine.com/remote-monitoring-management/": {},
-  "parallels.com/products/ras/try": {},
-  "realvnc.com/en/connect/download/vnc": {},
-  "repairtechsolutions.com/kabuto/": {},
-  "site24x7.com/msp": {},
-  "soti.net/products/soti-pocket-controller": {},
-  "systemmanager.ru/dntu.en/rdp_view.htm": {},
-  "tanium.com/products/tanium-deploy": {},
-  "wen.laplink.com/product/laplink-gold": {},
-  "www.quest.com/kace/": {},
-  "zoho.com/assist/": {}
+  "http://01com.com/imintouch-remote-pc-desktop": {
+    "RMM Tool": "I'm InTouch"
+  },
+  "http://acceo.com/turbomeeting/": {
+    "RMM Tool": "TurboMeeting"
+  },
+  "http://au.pcmag.com/utilities/21470/webex-pcnow": {
+    "RMM Tool": "Pcnow"
+  },
+  "http://beanywhere.en.uptodown.com/windows": {
+    "RMM Tool": "BeAnyWhere"
+  },
+  "http://cloudflare.com/products/tunnel/": {
+    "RMM Tool": "CloudFlare Tunnel"
+  },
+  "http://community.sophos.com/on-premise-endpoint/f/sophos-endpoint-software/5725/sophos-remote-management-system": {
+    "RMM Tool": "Sophos-Remote Management System"
+  },
+  "http://crosstecsoftware.com/remotecontrol": {
+    "RMM Tool": "CrossTec Remote Control"
+  },
+  "http://datto.com/au/products/rmm/": {
+    "RMM Tool": "CentraStage (Now Datto)"
+  },
+  "http://download.cnet.com/net-viewer/3000-2370_4-10034828.html": {
+    "RMM Tool": "Netviewer"
+  },
+  "http://eset.com/me/business/remote-management/remote-administrator/": {
+    "RMM Tool": "ESET Remote Administrator"
+  },
+  "http://github.com/dchapyshev/aspia": {
+    "RMM Tool": "Aspia"
+  },
+  "http://github.com/mikej81/webrdp": {
+    "RMM Tool": "WebRDP"
+  },
+  "http://github.com/stascorp/rdpwrap": {
+    "RMM Tool": "rdpwrap"
+  },
+  "http://github.com/v-e-o/rdp2tcp": {
+    "RMM Tool": "rdp2tcp"
+  },
+  "http://imperosoftware.com/impero-connect/": {
+    "RMM Tool": "Netop Remote Control (aka Impero Connect)"
+  },
+  "http://intelliadmin.com/remote-control": {
+    "RMM Tool": "IntelliAdmin Remote Control"
+  },
+  "http://ivanti.com/": {
+    "RMM Tool": "RES Automation Manager"
+  },
+  "http://learn.microsoft.com/en-us/azure/developer/dev-tunnels/overview": {
+    "RMM Tool": "Dev Tunnels (aka Visual Studio Dev Tunnel)"
+  },
+  "http://manageengine.com/remote-monitoring-management/": {
+    "RMM Tool": "ManageEngine RMM Central"
+  },
+  "http://parallels.com/products/ras/try": {
+    "RMM Tool": "Parallels Access"
+  },
+  "http://realvnc.com/en/connect/download/vnc": {
+    "RMM Tool": "VNC"
+  },
+  "http://repairtechsolutions.com/kabuto/": {
+    "RMM Tool": "Kabuto"
+  },
+  "http://site24x7.com/msp": {
+    "RMM Tool": "Site24x7"
+  },
+  "http://soti.net/products/soti-pocket-controller": {
+    "RMM Tool": "Pocket Controller"
+  },
+  "http://systemmanager.ru/dntu.en/rdp_view.htm": {
+    "RMM Tool": "RDPView"
+  },
+  "http://tanium.com/products/tanium-deploy": {
+    "RMM Tool": "Tanium Deploy"
+  },
+  "http://wen.laplink.com/product/laplink-gold": {
+    "RMM Tool": "Laplink Gold"
+  },
+  "http://www.quest.com/kace/": {
+    "RMM Tool": "Quest KACE Agent (formerly Dell KACE)"
+  },
+  "http://zoho.com/assist/": {
+    "RMM Tool": "Zoho Assist"
+  },
+  "https://01com.com/imintouch-remote-pc-desktop": {
+    "RMM Tool": "I'm InTouch"
+  },
+  "https://acceo.com/turbomeeting/": {
+    "RMM Tool": "TurboMeeting"
+  },
+  "https://au.pcmag.com/utilities/21470/webex-pcnow": {
+    "RMM Tool": "Pcnow"
+  },
+  "https://beanywhere.en.uptodown.com/windows": {
+    "RMM Tool": "BeAnyWhere"
+  },
+  "https://cloudflare.com/products/tunnel/": {
+    "RMM Tool": "CloudFlare Tunnel"
+  },
+  "https://community.sophos.com/on-premise-endpoint/f/sophos-endpoint-software/5725/sophos-remote-management-system": {
+    "RMM Tool": "Sophos-Remote Management System"
+  },
+  "https://crosstecsoftware.com/remotecontrol": {
+    "RMM Tool": "CrossTec Remote Control"
+  },
+  "https://datto.com/au/products/rmm/": {
+    "RMM Tool": "CentraStage (Now Datto)"
+  },
+  "https://download.cnet.com/net-viewer/3000-2370_4-10034828.html": {
+    "RMM Tool": "Netviewer"
+  },
+  "https://eset.com/me/business/remote-management/remote-administrator/": {
+    "RMM Tool": "ESET Remote Administrator"
+  },
+  "https://github.com/dchapyshev/aspia": {
+    "RMM Tool": "Aspia"
+  },
+  "https://github.com/mikej81/webrdp": {
+    "RMM Tool": "WebRDP"
+  },
+  "https://github.com/stascorp/rdpwrap": {
+    "RMM Tool": "rdpwrap"
+  },
+  "https://github.com/v-e-o/rdp2tcp": {
+    "RMM Tool": "rdp2tcp"
+  },
+  "https://imperosoftware.com/impero-connect/": {
+    "RMM Tool": "Netop Remote Control (aka Impero Connect)"
+  },
+  "https://intelliadmin.com/remote-control": {
+    "RMM Tool": "IntelliAdmin Remote Control"
+  },
+  "https://ivanti.com/": {
+    "RMM Tool": "RES Automation Manager"
+  },
+  "https://learn.microsoft.com/en-us/azure/developer/dev-tunnels/overview": {
+    "RMM Tool": "Dev Tunnels (aka Visual Studio Dev Tunnel)"
+  },
+  "https://manageengine.com/remote-monitoring-management/": {
+    "RMM Tool": "ManageEngine RMM Central"
+  },
+  "https://parallels.com/products/ras/try": {
+    "RMM Tool": "Parallels Access"
+  },
+  "https://realvnc.com/en/connect/download/vnc": {
+    "RMM Tool": "VNC"
+  },
+  "https://repairtechsolutions.com/kabuto/": {
+    "RMM Tool": "Kabuto"
+  },
+  "https://site24x7.com/msp": {
+    "RMM Tool": "Site24x7"
+  },
+  "https://soti.net/products/soti-pocket-controller": {
+    "RMM Tool": "Pocket Controller"
+  },
+  "https://systemmanager.ru/dntu.en/rdp_view.htm": {
+    "RMM Tool": "RDPView"
+  },
+  "https://tanium.com/products/tanium-deploy": {
+    "RMM Tool": "Tanium Deploy"
+  },
+  "https://wen.laplink.com/product/laplink-gold": {
+    "RMM Tool": "Laplink Gold"
+  },
+  "https://www.quest.com/kace/": {
+    "RMM Tool": "Quest KACE Agent (formerly Dell KACE)"
+  },
+  "https://zoho.com/assist/": {
+    "RMM Tool": "Zoho Assist"
+  }
 }
