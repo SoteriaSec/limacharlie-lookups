@@ -19,25 +19,18 @@ jobs:
         with:
           persist-credentials: true
 
-      - name: Download Sigma rule file
+      - name: Download LOLRMM CSV
         run: |
           curl -sL \
-            https://raw.githubusercontent.com/magicsword-io/LOLRMM/main/detections/sigma/rmm_domains_dns_queries.yml \
-            -o rmm_domains_dns_queries.yml
+            https://raw.githubusercontent.com/magicsword-io/LOLRMM/main/website/public/api/rmm_domains.csv \
+            -o rmm_domains.csv
 
       - name: Extract lookups & write JSON files
         run: |
           mkdir -p LOLRMM-Domains
-          pip3 install pyyaml
 
           python3 <<'EOF'
-          import yaml, json, re
-
-          # Load the Sigma rule
-          with open("rmm_domains_dns_queries.yml") as f:
-              rule = yaml.safe_load(f)
-
-          raw = rule["detection"]["selection"]["query|contains"]
+          import csv, json, re
 
           domains = {}
           ips = {}
@@ -46,23 +39,64 @@ jobs:
           # IPv4 regex
           ipv4_re = re.compile(r'^\d{1,3}(?:\.\d{1,3}){3}$')
 
-          for entry in raw:
-              # remove any leading dots or asterisks
-              trimmed = entry.lstrip(".*")
-              if not trimmed:
-                  continue
-              # classify as URL if it contains a slash
-              if "/" in trimmed:
-                  key = trimmed.lower()
-                  urls[key] = {}
-              # classify as IP
-              elif ipv4_re.match(trimmed):
-                  key = trimmed
-                  ips[key] = {}
-              # otherwise it's a domain
-              else:
-                  key = trimmed.lower()
-                  domains[key] = {}
+          def add_entry(target_dict, key, tool_name):
+              target_dict[key] = {"RMM Tool": tool_name}
+
+          # Prefer DictReader so the first row is treated as headers and skipped automatically.
+          with open("rmm_domains.csv", newline="") as f:
+              reader = csv.DictReader(f)
+
+              # The LOLRMM CSV currently uses these headers:
+              #   URI,RMM_Tool
+              # We'll also tolerate minor variations just in case.
+              uri_keys = ["URI", "Uri", "uri"]
+              tool_keys = ["RMM_Tool", "RMM Tool", "Tool", "tool", "rmm_tool"]
+
+              for row in reader:
+                  if not row:
+                      continue
+
+                  indicator = None
+                  for k in uri_keys:
+                      if k in row and row[k] is not None:
+                          indicator = row[k]
+                          break
+
+                  tool_name = ""
+                  for k in tool_keys:
+                      if k in row and row[k] is not None:
+                          tool_name = row[k]
+                          break
+
+                  if indicator is None:
+                      continue
+
+                  # Strip leading/trailing spaces, and newline cruft
+                  indicator = str(indicator).strip()
+                  tool_name = str(tool_name).strip()
+
+                  if not indicator:
+                      continue
+
+                  # Wildcard/leading dot handling
+                  trimmed = indicator.lstrip(".*")
+                  if not trimmed:
+                      continue
+
+                  # classify as URL if it contains a slash
+                  if "/" in trimmed:
+                      key = trimmed.lower()
+                      add_entry(urls, key, tool_name)
+
+                  # classify as IP
+                  elif ipv4_re.match(trimmed):
+                      key = trimmed
+                      add_entry(ips, key, tool_name)
+
+                  # otherwise it's a domain
+                  else:
+                      key = trimmed.lower()
+                      add_entry(domains, key, tool_name)
 
           # sort each and write out as JSON objects
           for filename, data in [

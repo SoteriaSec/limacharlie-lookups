@@ -36,7 +36,7 @@ We welcome your feedback and contributions!
 
 ## Need More Help
 
-Reach out to [SoteriaSec](https://soteriasec.io) directly if you need assistance with LimaCharlie, security operations, threat detection, or incident response in general.
+Reach out to [SoteriaSec](https://soteriasec.com) directly if you need assistance with LimaCharlie, security operations, threat detection, or incident response in general.
 
 ## Disclaimer
 
@@ -44,4 +44,4 @@ The lookup lists and detection rules provided in this repository are for communi
 
 ---
 
-© 2025 [SoteriaSec](https://soteriasec.io). All rights reserved.  
+© 2026 [SoteriaSec](https://soteriasec.com). All rights reserved.  
