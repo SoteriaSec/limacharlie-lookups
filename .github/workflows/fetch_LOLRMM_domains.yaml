@@ -85,8 +85,10 @@ jobs:
 
                   # classify as URL if it contains a slash
                   if "/" in trimmed:
-                      key = trimmed.lower()
-                      add_entry(urls, key, tool_name)
+                      # For URL outputs ONLY: write both https:// and http:// variants
+                      base = re.sub(r"^https?://", "", trimmed, flags=re.IGNORECASE).lower()
+                      add_entry(urls, f"https://{base}", tool_name)
+                      add_entry(urls, f"http://{base}", tool_name)
 
                   # classify as IP
                   elif ipv4_re.match(trimmed):
