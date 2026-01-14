@@ -43,6 +43,12 @@ hives:
               respond:
                   - action: report
                     name: RMM Tool Domain Queried
+                    suppression:
+                        max_count: 1
+                        period: 10m
+                        is_global: false
+                        keys:
+                            - '{{ .event.DOMAIN_NAME }}'
                     metadata:
                         author: Josh Lemon (SoteriaSec)
                         description: Detects DNS queries to known Remote Monitoring and Management (RMM) tool domains that could indicate unauthorized remote access. Excludes Chrome to avoid users brwosing websites.
@@ -104,7 +110,7 @@ hives:
                         description: Detects URLs accessed to known Remote Monitoring and Management (RMM) tool domains that could indicate unauthorized remote access. This only detects URLs in the browser.
                         falsepositives:
                         - Legitimate usage of approved remote management tools
-                        level: medium
+                        level: low
                         references:
                         - https://github.com/magicsword-io/LOLRMM
                         tags:
