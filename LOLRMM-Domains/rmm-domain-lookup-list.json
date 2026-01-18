@@ -449,6 +449,9 @@
   "gw.usw.gorelo.tech": {
     "RMM Tool": "Gorelo RMM"
   },
+  "heartbeatrm.com": {
+    "RMM Tool": "HeartbeatRM"
+  },
   "helpbeam.software.informer.com": {
     "RMM Tool": "HelpBeam"
   },
@@ -460,6 +463,9 @@
   },
   "hostedrmm.com": {
     "RMM Tool": "Connectwise Automate (LabTech)"
+  },
+  "immy.bot": {
+    "RMM Tool": "ImmyBot"
   },
   "imperosoftware.com": {
     "RMM Tool": "Impero Connect"
