@@ -29,6 +29,9 @@
   "agenthb.atera.com": {
     "RMM Tool": "Atera"
   },
+  "agentmqtt.fleetdeck.io": {
+    "RMM Tool": "FleetDeck.io"
+  },
   "agentreporting.atera.com": {
     "RMM Tool": "Atera"
   },
@@ -71,8 +74,14 @@
   "api.hoptodesk.com": {
     "RMM Tool": "HopToDesk"
   },
+  "api.idrive.com": {
+    "RMM Tool": "iDrive"
+  },
   "api.jumpcloud.com": {
     "RMM Tool": "Jump Cloud"
+  },
+  "api.netbird.io": {
+    "RMM Tool": "NetBird"
   },
   "api.netreo.com": {
     "RMM Tool": "Netreo"
@@ -200,6 +209,9 @@
   "charon.netreo.net": {
     "RMM Tool": "Netreo"
   },
+  "checkip.zmazonaws.com": {
+    "RMM Tool": "FleetDeck.io"
+  },
   "chromoting-client.talkgadget.google.com": {
     "RMM Tool": "Chrome Remote Desktop"
   },
@@ -232,9 +244,6 @@
   },
   "cmdm.comodo.com": {
     "RMM Tool": "Itarian"
-  },
-  "cognito-idp.us-west-2.amazonaws.com": {
-    "RMM Tool": "FleetDeck.io"
   },
   "connect.acronis.com": {
     "RMM Tool": "Acronis Cyber Protect (Remotix)"
@@ -335,6 +344,9 @@
   "donkz.nl": {
     "RMM Tool": "Remote Desktop Plus"
   },
+  "download.hoptodesk.com": {
+    "RMM Tool": "HopToDesk"
+  },
   "download.pilixo.com": {
     "RMM Tool": "Pilixo"
   },
@@ -346,6 +358,9 @@
   },
   "downloads.zohodl.com.cn": {
     "RMM Tool": "Zoho Assist"
+  },
+  "duetdisplay.com": {
+    "RMM Tool": "Duet Display"
   },
   "dwservice.net": {
     "RMM Tool": "DW Service"
@@ -389,6 +404,9 @@
   "fortra.com": {
     "RMM Tool": "Fortra"
   },
+  "gateway.miradore.com": {
+    "RMM Tool": "Miradore"
+  },
   "gateway.zohoassist.com": {
     "RMM Tool": "Zoho Assist"
   },
@@ -400,6 +418,9 @@
   },
   "geo.netsupportsoftware.com": {
     "RMM Tool": "NetSupport Manager"
+  },
+  "gerwconline.blob.core.windows.net": {
+    "RMM Tool": "Miradore"
   },
   "getalphacontrol.com": {
     "RMM Tool": "Atera"
@@ -461,8 +482,14 @@
   "helpu.co.kr": {
     "RMM Tool": "HelpU"
   },
+  "hoptodesk.com": {
+    "RMM Tool": "HopToDesk"
+  },
   "hostedrmm.com": {
     "RMM Tool": "Connectwise Automate (LabTech)"
+  },
+  "idrive.com": {
+    "RMM Tool": "iDrive"
   },
   "immy.bot": {
     "RMM Tool": "ImmyBot"
@@ -499,6 +526,9 @@
   },
   "isodownload.baramundi.com": {
     "RMM Tool": "baramundi Management Suite"
+  },
+  "itagent.com": {
+    "RMM Tool": "Duet Display"
   },
   "itsm-us1.comodo.com": {
     "RMM Tool": "Comodo RMM"
@@ -587,6 +617,9 @@
   "managedsupport.kaseya.net": {
     "RMM Tool": "Kaseya (VSA)"
   },
+  "manageengine.com": {
+    "RMM Tool": "ManageEngine ServiceDesk Plus"
+  },
   "mdmsupport.comodo.com": {
     "RMM Tool": "Comodo RMM"
   },
@@ -601,6 +634,9 @@
   },
   "mikogo4.com": {
     "RMM Tool": "Mikogo"
+  },
+  "miradore.com": {
+    "RMM Tool": "Miradore"
   },
   "mremoteng.org": {
     "RMM Tool": "mRemoteNG"
@@ -631,6 +667,9 @@
   },
   "nchuser.com": {
     "RMM Tool": "DesktopNow"
+  },
+  "netbird.io": {
+    "RMM Tool": "NetBird"
   },
   "netop.com": {
     "RMM Tool": "Netop Remote Control (Impero Connect)"
@@ -664,6 +703,9 @@
   },
   "ntrsupport.com": {
     "RMM Tool": "NTR Remote"
+  },
+  "nvaccess.org": {
+    "RMM Tool": "NVDA (Non-Visual Desktop Access)"
   },
   "ocsinventory-ng.org": {
     "RMM Tool": "OCS inventory"
@@ -751,6 +793,9 @@
   },
   "radmin.com": {
     "RMM Tool": "RAdmin"
+  },
+  "rdp.duetdisplay.com": {
+    "RMM Tool": "Duet Display"
   },
   "real-time-collaboration.com": {
     "RMM Tool": "Mikogo"
@@ -899,6 +944,9 @@
   "signal.hoptodesk.com": {
     "RMM Tool": "HopToDesk"
   },
+  "signal.netbird.io": {
+    "RMM Tool": "NetBird"
+  },
   "signalserver.xyz": {
     "RMM Tool": "Distant Desktop"
   },
@@ -1004,6 +1052,9 @@
   "tightvnc.com": {
     "RMM Tool": "TightVNC"
   },
+  "tmate.io": {
+    "RMM Tool": "tmate"
+  },
   "todesk.com": {
     "RMM Tool": "ToDesk"
   },
@@ -1042,6 +1093,9 @@
   },
   "www.baramundi.com": {
     "RMM Tool": "baramundi Management Suite"
+  },
+  "www.hoptodesk.com": {
+    "RMM Tool": "HopToDesk"
   },
   "www.remotepc.com": {
     "RMM Tool": "RemotePC"
