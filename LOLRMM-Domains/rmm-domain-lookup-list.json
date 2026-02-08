@@ -185,9 +185,6 @@
   "builds.level.io": {
     "RMM Tool": "Level"
   },
-  "cacerts.thawte.com": {
-    "RMM Tool": "Atera"
-  },
   "cc.centrastage.net": {
     "RMM Tool": "CentraStage (Now Datto)"
   },
