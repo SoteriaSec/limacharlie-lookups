@@ -135,7 +135,7 @@
     "RMM Tool": "Atera"
   },
   "atled.syspectr.com": {
-    "RMM Tool": "Syspectr"
+    "RMM Tool": "Laplink Everywhere"
   },
   "attachments.servably.com": {
     "RMM Tool": "Syncro"
@@ -162,7 +162,7 @@
     "RMM Tool": "BeamYourScreen"
   },
   "beanywhere.com": {
-    "RMM Tool": "BeAnyWhere"
+    "RMM Tool": "N-Able Advanced Monitoring Agent"
   },
   "beinsync.com": {
     "RMM Tool": "BeInSync"
@@ -279,7 +279,7 @@
     "RMM Tool": "RemoteView"
   },
   "control.connectwise.com": {
-    "RMM Tool": "ConnectWise Control"
+    "RMM Tool": "ScreenConnect"
   },
   "crossloop.com": {
     "RMM Tool": "CrossLoop"
@@ -528,7 +528,7 @@
     "RMM Tool": "Duet Display"
   },
   "itsm-us1.comodo.com": {
-    "RMM Tool": "Comodo RMM"
+    "RMM Tool": "Itarian"
   },
   "itsupport247.net": {
     "RMM Tool": "ITSupport247 (ConnectWise)"
@@ -573,7 +573,7 @@
     "RMM Tool": "Laplink Everywhere"
   },
   "level.io": {
-    "RMM Tool": "Level.io"
+    "RMM Tool": "Level"
   },
   "litemanager.com": {
     "RMM Tool": "LiteManager"
@@ -618,7 +618,7 @@
     "RMM Tool": "ManageEngine ServiceDesk Plus"
   },
   "mdmsupport.comodo.com": {
-    "RMM Tool": "Comodo RMM"
+    "RMM Tool": "Itarian"
   },
   "mdt.qq.com": {
     "RMM Tool": "QQ IM-remote assistance"
@@ -969,7 +969,7 @@
     "RMM Tool": "Pocket Controller (Soti Xsight)"
   },
   "splashtop.com": {
-    "RMM Tool": "Splashtop"
+    "RMM Tool": "Splashtop Remote"
   },
   "spyanywhere.com": {
     "RMM Tool": "SpyAnywhere"
@@ -996,7 +996,7 @@
     "RMM Tool": "SuperOps"
   },
   "support.services.microsoft.com": {
-    "RMM Tool": "Microsoft Quick Assist"
+    "RMM Tool": "Quick Assist"
   },
   "supremocontrol.com": {
     "RMM Tool": "Supremo"
